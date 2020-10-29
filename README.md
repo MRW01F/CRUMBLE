@@ -1,7 +1,6 @@
-# CRUMBLE
+# CRUMBLE : Social News Aggregation, And Discussion
 
-- Git Command [cheatsheet](CHEATSHEET.md)
-
+<br>
 
 # TODO (Update After Completion)
 
