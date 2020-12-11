@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-reddit-clone": {
+    "CRUMBLE": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-reddit-clone",
+            "outputPath": "dist/CRUMBLE",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-reddit-clone:build"
+            "browserTarget": "CRUMBLE:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-reddit-clone:build:production"
+              "browserTarget": "CRUMBLE:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-reddit-clone:build"
+            "browserTarget": "CRUMBLE:build"
           }
         },
         "test": {
@@ -113,15 +113,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-reddit-clone:serve"
+            "devServerTarget": "CRUMBLE:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-reddit-clone:serve:production"
+              "devServerTarget": "CRUMBLE:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-reddit-clone"
+  "defaultProject": "CRUMBLE"
 }

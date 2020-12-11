@@ -6,7 +6,7 @@
 
 - still have to go through the code
 - figure out the MYSQL schema type (not provided in video)
-- Change the name from `AngularRedditClone` To `CRUMBLE` Everywhere ( Careful, may lead to broken code )
+- Change the name from `CRUMBLE` To `CRUMBLE` Everywhere ( Careful, may lead to broken code )
 - Rename the terms 
   - subreddit -> community
   - upvote/downvote -> like/dislike
@@ -29,7 +29,7 @@
   - `ctrl` + `shift` + `a` -> [check box] enable annotation processing
 
 
-# AngularRedditClone
+# CRUMBLE
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
