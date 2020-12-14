@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-12-06T21:26:21-0500",
-    comments = "version: 1.3.1.Final, compiler: javac, environment: Java 14.0.2 (N/A)"
+    date = "2020-12-14T07:43:48-0500",
+    comments = "version: 1.3.1.Final, compiler: javac, environment: Java 11.0.9 (JetBrains s.r.o.)"
 )
 @Component
 public class PostMapperImpl extends PostMapper {
