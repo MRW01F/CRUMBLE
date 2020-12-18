@@ -25,6 +25,7 @@
     "fast-glob": "^3.2.4",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.3",
+    "universal-analytics": "^0.4.23",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
