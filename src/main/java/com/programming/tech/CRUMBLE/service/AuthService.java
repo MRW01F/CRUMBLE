@@ -1,6 +1,6 @@
 package com.programming.tech.CRUMBLE.service;
 
-import com.programming.tech.CRUMBLE.exceptions.SpringRedditException;
+import com.programming.tech.CRUMBLE.exceptions.SpringCrumbleException;
 import com.programming.tech.CRUMBLE.repository.UserRepository;
 import com.programming.tech.CRUMBLE.repository.VerificationTokenRepository;
 import com.programming.tech.CRUMBLE.security.JwtProvider;
@@ -51,7 +51,7 @@ public class AuthService {
 
         String token = generateVerificationToken(user);
         mailService.sendMail(new NotificationEmail("Please Activate your Account",
-                user.getEmail(), "Thank you for signing up to Spring Reddit, " +
+                user.getEmail(), "Thank you for signing up to CRUMBLE, " +
                 "please click on the below url to activate your account : " +
                 "http://localhost:8080/api/auth/accountVerification/" + token));
     }
@@ -66,7 +66,7 @@ public class AuthService {
 
     private void fetchUserAndEnable(VerificationToken verificationToken) {
         String username = verificationToken.getUser().getUsername();
-        User user = userRepository.findByUsername(username).orElseThrow(() -> new SpringRedditException("User not found with name - " + username));
+        User user = userRepository.findByUsername(username).orElseThrow(() -> new SpringCrumbleException("User not found with name - " + username));
         user.setEnabled(true);
         userRepository.save(user);
     }
@@ -83,7 +83,7 @@ public class AuthService {
 
     public void verifyAccount(String token) {
         Optional<VerificationToken> verificationToken = verificationTokenRepository.findByToken(token);
-        fetchUserAndEnable(verificationToken.orElseThrow(() -> new SpringRedditException("Invalid Token")));
+        fetchUserAndEnable(verificationToken.orElseThrow(() -> new SpringCrumbleException("Invalid Token")));
     }
 
     public AuthenticationResponse login(LoginRequest loginRequest) {

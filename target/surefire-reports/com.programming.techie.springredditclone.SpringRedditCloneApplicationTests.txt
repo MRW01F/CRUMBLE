@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.programming.techie.springredditclone.SpringRedditCloneApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.024 s - in com.programming.techie.springredditclone.SpringRedditCloneApplicationTests

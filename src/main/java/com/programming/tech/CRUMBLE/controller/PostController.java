@@ -35,9 +35,9 @@ public class PostController {
         return status(HttpStatus.OK).body(postService.getPost(id));
     }
 
-    @GetMapping("by-subreddit/{id}")
-    public ResponseEntity<List<PostResponse>> getPostsBySubreddit(Long id) {
-        return status(HttpStatus.OK).body(postService.getPostsBySubreddit(id));
+    @GetMapping("by-community/{id}")
+    public ResponseEntity<List<PostResponse>> getPostsByCommunity(Long id) {
+        return status(HttpStatus.OK).body(postService.getPostsByCommunity(id));
     }
 
     @GetMapping("by-user/{name}")

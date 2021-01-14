@@ -1,6 +1,6 @@
 package com.programming.tech.CRUMBLE.security;
 
-import com.programming.tech.CRUMBLE.exceptions.SpringRedditException;
+import com.programming.tech.CRUMBLE.exceptions.SpringCrumbleException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Value;
@@ -33,7 +33,7 @@ public class JwtProvider {
             InputStream resourceAsStream = getClass().getResourceAsStream("/springblog.jks");
             keyStore.load(resourceAsStream, "secret".toCharArray());
         } catch (KeyStoreException | CertificateException | NoSuchAlgorithmException | IOException e) {
-            throw new SpringRedditException("Exception occurred while loading keystore", e);
+            throw new SpringCrumbleException("Exception occurred while loading keystore", e);
         }
 
     }
@@ -61,7 +61,7 @@ public class JwtProvider {
         try {
             return (PrivateKey) keyStore.getKey("springblog", "secret".toCharArray());
         } catch (KeyStoreException | NoSuchAlgorithmException | UnrecoverableKeyException e) {
-            throw new SpringRedditException("Exception occured while retrieving public key from keystore", e);
+            throw new SpringCrumbleException("Exception occured while retrieving public key from keystore", e);
         }
     }
 
@@ -74,7 +74,7 @@ public class JwtProvider {
         try {
             return keyStore.getCertificate("springblog").getPublicKey();
         } catch (KeyStoreException e) {
-            throw new SpringRedditException("Exception occured while " +
+            throw new SpringCrumbleException("Exception occured while " +
                     "retrieving public key from keystore", e);
         }
     }

@@ -1,7 +1,7 @@
 package com.programming.tech.CRUMBLE.service;
 
 import com.programming.tech.CRUMBLE.exceptions.PostNotFoundException;
-import com.programming.tech.CRUMBLE.exceptions.SpringRedditException;
+import com.programming.tech.CRUMBLE.exceptions.SpringCrumbleException;
 import com.programming.tech.CRUMBLE.repository.PostRepository;
 import com.programming.tech.CRUMBLE.repository.VoteRepository;
 import com.programming.tech.CRUMBLE.dto.VoteDto;
@@ -31,7 +31,7 @@ public class VoteService {
         if (voteByPostAndUser.isPresent() &&
                 voteByPostAndUser.get().getVoteType()
                         .equals(voteDto.getVoteType())) {
-            throw new SpringRedditException("You have already "
+            throw new SpringCrumbleException("You have already "
                     + voteDto.getVoteType() + "'d for this post");
         }
         if (UPVOTE.equals(voteDto.getVoteType())) {

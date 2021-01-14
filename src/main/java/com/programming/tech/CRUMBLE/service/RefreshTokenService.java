@@ -1,6 +1,6 @@
 package com.programming.tech.CRUMBLE.service;
 
-import com.programming.tech.CRUMBLE.exceptions.SpringRedditException;
+import com.programming.tech.CRUMBLE.exceptions.SpringCrumbleException;
 import com.programming.tech.CRUMBLE.repository.RefreshTokenRepository;
 import com.programming.tech.CRUMBLE.model.RefreshToken;
 import lombok.AllArgsConstructor;
@@ -27,7 +27,7 @@ public class RefreshTokenService {
 
     void validateRefreshToken(String token) {
         refreshTokenRepository.findByToken(token)
-                .orElseThrow(() -> new SpringRedditException("Invalid refresh Token"));
+                .orElseThrow(() -> new SpringCrumbleException("Invalid refresh Token"));
     }
 
     public void deleteRefreshToken(String token) {

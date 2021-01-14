@@ -1,6 +1,6 @@
 package com.programming.tech.CRUMBLE.service;
 
-import com.programming.tech.CRUMBLE.exceptions.SpringRedditException;
+import com.programming.tech.CRUMBLE.exceptions.SpringCrumbleException;
 import com.programming.tech.CRUMBLE.model.NotificationEmail;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +23,7 @@ class MailService {
     void sendMail(NotificationEmail notificationEmail) {
         MimeMessagePreparator messagePreparator = mimeMessage -> {
             MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage);
-            messageHelper.setFrom("springreddit@email.com");
+            messageHelper.setFrom("Mihirgosai.159357@gmail.com");
             messageHelper.setTo(notificationEmail.getRecipient());
             messageHelper.setSubject(notificationEmail.getSubject());
             messageHelper.setText(notificationEmail.getBody());
@@ -33,7 +33,7 @@ class MailService {
             log.info("Activation email sent!!");
         } catch (MailException e) {
             log.error("Exception occurred when sending mail", e);
-            throw new SpringRedditException("Exception occurred when sending mail to " + notificationEmail.getRecipient(), e);
+            throw new SpringCrumbleException("Exception occurred when sending mail to " + notificationEmail.getRecipient(), e);
         }
     }
 

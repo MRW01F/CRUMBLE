@@ -1,6 +1,6 @@
 package com.programming.tech.CRUMBLE.model;
 
-import com.programming.tech.CRUMBLE.exceptions.SpringRedditException;
+import com.programming.tech.CRUMBLE.exceptions.SpringCrumbleException;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ public enum VoteType {
         return Arrays.stream(VoteType.values())
                 .filter(value -> value.getDirection().equals(direction))
                 .findAny()
-                .orElseThrow(() -> new SpringRedditException("Vote not found"));
+                .orElseThrow(() -> new SpringCrumbleException("Vote not found"));
     }
 
     public Integer getDirection() {
