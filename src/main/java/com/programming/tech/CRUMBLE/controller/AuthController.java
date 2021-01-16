@@ -50,4 +50,20 @@ public class AuthController {
         refreshTokenService.deleteRefreshToken(refreshTokenRequest.getRefreshToken());
         return ResponseEntity.status(OK).body("Refresh Token Deleted Successfully!!");
     }
+
+    @RequestMapping("/error")
+    public ResponseEntity<String> error(@Valid @RequestBody RefreshTokenRequest refreshTokenRequest) {
+      refreshTokenService.deleteRefreshToken(refreshTokenRequest.getRefreshToken());
+      return ResponseEntity.status(403).body("There was an unexpected error (type=Forbidden, status=403).\n" +
+        "Access Denied");
+    }
+
+
+
+
+
+
+
+
+
 }
