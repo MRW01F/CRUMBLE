@@ -1,4 +1,4 @@
-.sidebar-view-subreddit {
+.sidebar-view-community {
     width: 312px;
     height: 242px;
     --post-line-color: #ccc;
@@ -13,7 +13,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
-  .sidebar-view-subreddit {
+
+  .sidebar-view-community {
     height: 280px;
   }

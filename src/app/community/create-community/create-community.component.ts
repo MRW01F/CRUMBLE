@@ -34,7 +34,7 @@ export class CreateCommunityComponent implements OnInit {
     this.router.navigateByUrl('/');
   }
 
-  createSubreddit() {
+  createCommunity() {
     this.communityModel.name = this.createCommunityForm.get('title')
     .value;
     this.communityModel.description = this.createCommunityForm.get('description')
@@ -45,4 +45,5 @@ export class CreateCommunityComponent implements OnInit {
       throwError(error);
     })
   }
+
 }
