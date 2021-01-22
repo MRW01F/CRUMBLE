@@ -29,3 +29,5 @@ out/
 .idea/modules
 *.iml
 *.ipr
+node_modules
+target
