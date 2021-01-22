@@ -17,8 +17,8 @@ export class SideBarComponent implements OnInit {
     this.router.navigateByUrl('/create-post');
   }
 
-  goToCreateSubreddit() {
-    this.router.navigateByUrl('/create-subreddit');
+  goToCreateCommunity() {
+    this.router.navigateByUrl('/create-community');
   }
 
 }

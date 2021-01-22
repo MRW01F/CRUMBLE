@@ -15,7 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfiguration {
     @Bean
-    public Docket redditCloneApi() {
+    public Docket CRUMBLEApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.any())
@@ -26,10 +26,10 @@ public class SwaggerConfiguration {
 
     private ApiInfo getApiInfo() {
         return new ApiInfoBuilder()
-                .title("Reddit Clone API")
-                .version("1.0")
-                .description("API for Reddit Clone Application")
-                .contact(new Contact("Sai Upadhyayula", "http://programmingtechie.com", "xyz@email.com"))
+                .title("CRUMBLE API")
+                .version("3.4.0")
+                .description("API for CRUMBLE Application")
+                .contact(new Contact("MRW01F", "http://mrw01f.github.io", "Mihirgosai.159357@gmail.com"))
                 .license("Apache License Version 2.0")
                 .build();
     }
