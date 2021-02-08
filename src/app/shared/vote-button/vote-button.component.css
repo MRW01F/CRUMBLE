@@ -1,19 +1,34 @@
+<<<<<<< HEAD
 .votebox {
     display: flex;
     text-align: center;
     flex-direction: column;
     font-size: 1em;
     align-self: center;
+=======
+.votebox {    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 1em;    
+>>>>>>> main
 }
 
 .votesection{
     margin:0px;
     background-color: #ffffff;
+<<<<<<< HEAD
     align-self: center;
 }
 .upvote,.downvote {
     cursor: pointer;
     border-radius: 2px solid;
+=======
+}
+.upvote,.downvote {
+    cursor: pointer;
+    border-radius: 2px solid;        
+>>>>>>> main
 }
 .upvote:hover {
     color: green;
@@ -23,6 +38,11 @@
 }
 
 .votecount{
+<<<<<<< HEAD
     font-weight: bold;
     /*align-self: center;*/
 }
+=======
+    font-weight: bold;    
+}
+>>>>>>> main

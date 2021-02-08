@@ -1,6 +1,11 @@
 .sidebar{
+<<<<<<< HEAD
     width: 350px;
     height: 300px;
+=======
+    width: 312px;
+    height: 242px;
+>>>>>>> main
     --post-line-color: #ccc;
     border: 1px solid #ccc;
     margin-bottom: 10px;
