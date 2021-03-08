@@ -1,34 +1,22 @@
-<<<<<<< HEAD
-.votebox {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    font-size: 1em;
-    align-self: center;
-=======
 .votebox {    
     display: flex;
     text-align: center;
     flex-direction: column;
-    font-size: 1em;    
->>>>>>> main
+    font-size: 15px;    
 }
 
+.p-2 {
+    align-self: center;
+    margin-left: 10px;
+}
 .votesection{
     margin:0px;
+    margin-right: 5px;
     background-color: #ffffff;
-<<<<<<< HEAD
-    align-self: center;
-}
-.upvote,.downvote {
-    cursor: pointer;
-    border-radius: 2px solid;
-=======
 }
 .upvote,.downvote {
     cursor: pointer;
     border-radius: 2px solid;        
->>>>>>> main
 }
 .upvote:hover {
     color: green;
@@ -38,11 +26,11 @@
 }
 
 .votecount{
-<<<<<<< HEAD
-    font-weight: bold;
-    /*align-self: center;*/
-}
-=======
     font-weight: bold;    
 }
->>>>>>> main
+.sec{
+    /*padding: 2px 2px 2px 2px;*/
+    margin-left: 0px;
+    max-width: 50px;
+    margin-top: 12px;
+}

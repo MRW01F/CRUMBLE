@@ -1,14 +1,17 @@
 <div class="CRUMBLE-body">
   <div class="container">
+
     <div class="row">
+      <app-community-side-bar></app-community-side-bar>
       <hr />
-      <div class="col-md-9">
+      <div class="post-d">
         <app-post-tile [posts]="posts"></app-post-tile>
       </div>
-      <div class="col-md-3">
+      <hr />
+      <div class="bar-d">
         <app-side-bar></app-side-bar>
-        <app-community-side-bar></app-community-side-bar>
-      </div>
+        <app-profile></app-profile>
+       </div>
     </div>
   </div>
 </div>

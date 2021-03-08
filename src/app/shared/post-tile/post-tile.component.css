@@ -4,17 +4,28 @@
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: rgba(255,255,255,0.8);
-    color: #878A8C;
+    background-color: #02153c;
+    color: white;
     position: relative;
     border-radius: 4px;
     padding:5px;
 }
-
+.post:hover{
+    box-shadow:0px 1px 10px red;
+}
+.full-post{
+    position: relative;
+    margin-right: -240px;
+    margin-left: -120px;
+}
 .btnCommments{
     border-radius: 2px solid;
-    color: #878A8C;
+    color: white;
     opacity: 1;
+}
+
+.cc{
+    color:red;
 }
 
 .btnCommments:hover{
@@ -28,8 +39,11 @@
     opacity: 1;
 }
 
-.posturl, .postname{
-    color: black;
+.posturl{
+    color:red;
+}
+.postname{
+    color:white;
 }
 
 .community-text{
@@ -38,4 +52,16 @@
 
 .post-text{
     margin-top: 10px;
+}
+.login{
+    background-color:#000714;
+    border-color:red;
+    color: white;
+    fill:#000714;
+    margin-right: 3px;
+    
+}
+.report {
+    float:right;
+    color: red;
 }

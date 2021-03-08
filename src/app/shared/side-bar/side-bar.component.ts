@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./side-bar.component.css']
 })
 export class SideBarComponent implements OnInit {
-
+ 
   constructor(private router: Router) { }
 
   ngOnInit() {
+   
   }
 
   goToCreatePost() {
@@ -20,5 +21,5 @@ export class SideBarComponent implements OnInit {
   goToCreateCommunity() {
     this.router.navigateByUrl('/create-community');
   }
-
+  
 }

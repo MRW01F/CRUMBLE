@@ -12,22 +12,33 @@ import { CommentPayload } from 'src/app/comment/comment.payload';
 })
 export class UserProfileComponent implements OnInit {
   name: string;
-  posts: PostModel[];
+  // posts: PostModel[];
   comments: CommentPayload[];
   postLength: number;
   commentLength: number;
+
+  posts: Array<PostModel> = [];
 
   constructor(private activatedRoute: ActivatedRoute, private postService: PostService,
     private commentService: CommentService) {
     this.name = this.activatedRoute.snapshot.params.name;
 
-    this.postService.getAllPostsByUser(this.name).subscribe(data => {
-      this.posts = data;
-      this.postLength = data.length;
+    // this.postService.getAllPostsByUser(this.name).subscribe(data => {
+    //   this.posts = data;
+    //   this.postLength = data.length;
+    //   console.log(data);
+    // }
+    
+    // );
+
+    this.postService.getAllPosts().subscribe(post => {
+      this.posts = post;
     });
+
     this.commentService.getAllCommentsByUser(this.name).subscribe(data => {
       this.comments = data;
       this.commentLength = data.length;
+      console.log(data);
     });
   }
 
@@ -35,3 +46,11 @@ export class UserProfileComponent implements OnInit {
   }
 
 }
+
+// posts: Array<PostModel> = [];
+
+  // constructor(private postService: PostService) {
+  //   this.postService.getAllPosts().subscribe(post => {
+  //     this.posts = post;
+  //   });
+  // }

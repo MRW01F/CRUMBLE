@@ -9,6 +9,9 @@ import { ListCommunitiesComponent } from './community/list-community/list-commun
 import { ViewPostComponent } from './post/view-post/view-post.component';
 import { UserProfileComponent } from './auth/user-profile/user-profile.component';
 import { AuthGuard } from './auth/auth.guard';
+import { ProfileComponent } from './auth/profile/profile.component';
+import { ReportComponent } from './auth/report/report.component';
+import { ForgotidComponent } from './auth/forgotid/forgotid.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,7 +21,10 @@ const routes: Routes = [
   { path: 'create-post', component: CreatePostComponent, canActivate: [AuthGuard] },
   { path: 'create-community', component: CreateCommunityComponent, canActivate: [AuthGuard] },
   { path: 'sign-up', component: SignupComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  {path: 'forgotid', component: ForgotidComponent},
+  {path: 'profile', component: ProfileComponent},
+  {path: 'report', component: ReportComponent}
 ];
 
 @NgModule({

@@ -6,6 +6,7 @@ import { throwError } from 'rxjs';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { CommentPayload } from 'src/app/comment/comment.payload';
 import { CommentService } from 'src/app/comment/comment.service';
+import { faComments } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-view-post',
@@ -14,6 +15,7 @@ import { CommentService } from 'src/app/comment/comment.service';
 })
 export class ViewPostComponent implements OnInit {
 
+  faComments = faComments;
   postId: number;
   post: PostModel;
   commentForm: FormGroup;

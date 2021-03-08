@@ -1,3 +1,10 @@
+.container{
+  margin-right: 350px;
+  margin-left: -45px;
+  margin-top: 90px;
+  width: 3000px;
+  
+}
 .post-title {
   font-size: 28px;
   font-weight: bold;
@@ -13,11 +20,11 @@
 }
 
 .post-url {
-  color: black;
+  color: red;
 }
 
 .username{
-    color: gray;
+    color: #71b6ff;
 }
 
 .post-text{
@@ -30,11 +37,12 @@
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: rgba(255,255,255,0.8);
-    color: #878A8C;
-    position: relative;
+    background-color: #02153c;
+    color: white;
+    position: relative; 
     border-radius: 4px;
-    padding:5px;
+    padding:2px;
+    
 }
 
 .comment{
@@ -43,8 +51,18 @@
     margin-bottom: 10px;
     overflow: hidden;
     background-color: rgba(255,255,255,0.8);
-    color: #878A8C;
+    color: #2f2f30;
     position: relative;
     border-radius: 4px;
     padding:5px;
 }
+.community-side-bar{
+  margin-top: -20px;
+  margin-left: 15px;
+}
+.sidebar{
+  margin-left: 1280px;
+  margin-top: 5px; 
+  position: fixed;  
+  float: right;
+} 

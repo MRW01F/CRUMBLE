@@ -1,16 +1,21 @@
 header{
     border-radius: 1px solid;
 }
+.my-navbar{
+    background-color: #0b0f3c;
+}
 .CRUMBLE-icon-svg{
     height: 50px;
-    padding: 8px 8px 8px 0;
+    padding: 1px 1px 1px 0;
     width: 50px;
 }
 
-.CRUMBLE-text{
+.Crumble-text{
     font-weight: 700;
     height: 50px;
     width: 50px;
+    color:red;
+    font-size: 20px;
 }
 .logo{
     text-decoration: none;
@@ -18,9 +23,9 @@ header{
 
 .login, .sign-up{
     background-color: transparent;
-    border-color: #0079D3;
-    color: #0079D3;
-    fill: #0079D3;
+    border-color:white;
+    color: white;
+    fill: white;
     border: 1px solid;
     border-radius: 4px;
     box-sizing: border-box;
@@ -37,9 +42,9 @@ header{
 }
 
 .sign-up{
-    background-color: #0079D3;
-    border-color: #0079D3;
-    color: aliceblue;
+    background-color:white;
+    border-color:white;
+    color: #0b0f3c;
 }
 
 .sign-up:hover{
@@ -64,28 +69,10 @@ header{
     text-transform: uppercase;
     padding: 3px 16px;
     opacity: 1;
-    border: 0px;
-}
-
-.userdetails:hover{
     border: 1px solid;
 }
-
-.dropdown-item{
-    background-color: #f8f9fa;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.dropdown-item:hover{
-    background-color: #0079D3;
-}
-
-.dropdown-menu{
-    background-color: #f8f9fa;
+.userdetails span{
+    color: white;
 }
 
 .account-icon{

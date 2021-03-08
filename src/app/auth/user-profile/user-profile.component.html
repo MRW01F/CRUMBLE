@@ -1,16 +1,16 @@
 <div class="container">
-  <div>
-    Welcome <b>{{name}}</b>.<br /> You have posted <b>{{postLength}}</b> time(s) and commented
+  <div class="details">
+    <!-- Welcome <span>{{name}}</span>.<br /> You have posted <b>{{postLength}}</b> time(s) and commented
     <b>{{commentLength}}</b> time(s).
     You can check your post and comment history below.
   </div>
   <hr />
-  <div>
+  <div class="post-details">
     Your Posts:
   </div>
-  <app-post-tile [posts]="posts"></app-post-tile>
+   <app-post-tile [posts]="posts"></app-post-tile> 
   <hr />
-  <div>
+  <div class="comment-details">
     Your Comments:
   </div>
   <div *ngFor="let comment of comments">
@@ -23,6 +23,17 @@
       </div>
       <b>{{comment.text}}</b>
     </div>
-    <hr />
+    <hr /> -->
+    <div class="profile">
+      <div class="upper-container">
+        <img src="./assets/images/userbg2.jpg">
+          <div class="img-container">
+            <img src="./assets/images/profile.png"> <h3>{{name}}</h3>
+          </div>
+      </div>
+    </div>
   </div>
-</div>
+</div> 
+<div class="container-a">
+  <app-user-post [posts]="posts"></app-user-post>
+</div> 

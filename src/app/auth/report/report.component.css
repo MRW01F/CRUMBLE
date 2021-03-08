@@ -1,0 +1,104 @@
+.login-section{
+  margin: 100px;
+  margin-top: 150px;
+ 
+}
+
+.card-header{
+  color:white;
+  background-color: #100f3a;
+  box-shadow:0px 1px 10px red;
+}
+.card-body{
+  color:white;
+  background-color: #000714;
+  font-size: 18px;
+  box-shadow:0px 1px 10px red;
+}
+.login{
+  background-color:#000714;
+  color: white;
+  fill:#000714;
+  border: 1px solid red;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 3px 16px;
+  opacity: 1;
+}
+.login-failed, .register-success{
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  border: 2px solid black;
+  width: 65%;    
+  background-color: red;
+}
+
+.login-failed-text, .register-success-text{
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;    
+  color: aliceblue;
+}
+.content{
+  margin-left: 50px;
+}
+
+textarea{
+  width: 400px;
+  
+} 
+.popup .overlay{
+  position:fixed;
+  top: 0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rbg(0,0,0,0.7);
+  z-index: 1;
+  display: none;
+}
+.popup .content{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  color: #000714;
+  width: 500px;
+  height: 250px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.popup .close-btn{
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top:20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+.popup.active .overlay{
+  display: block;
+}
+.popup.active .content{
+  transition: all 30ms ease-in-out;
+  transform: translate(-50%, -50%)scale(1);
+}

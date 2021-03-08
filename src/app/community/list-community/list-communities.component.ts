@@ -4,7 +4,7 @@ import { CommunityService } from '../community.service';
 import { throwError } from 'rxjs';
 
 @Component({
-  selector: 'app-list-subreddits',
+  selector: 'app-list-community',
   templateUrl: './list-communities.component.html',
   styleUrls: ['./list-communities.component.css']
 })

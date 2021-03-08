@@ -25,6 +25,12 @@ import { EditorModule } from '@tinymce/tinymce-angular';
 import { ViewPostComponent } from './post/view-post/view-post.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserProfileComponent } from './auth/user-profile/user-profile.component';
+import { ProfileComponent } from './auth/profile/profile.component';
+import { ReportComponent } from './auth/report/report.component';
+import { ForgotidComponent } from './auth/forgotid/forgotid.component';
+import { UserPostComponent } from './post/user-post/user-post.component';
+
+
 
 
 @NgModule({
@@ -42,7 +48,13 @@ import { UserProfileComponent } from './auth/user-profile/user-profile.component
     CreatePostComponent,
     ListCommunitiesComponent,
     ViewPostComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    ProfileComponent,
+    ReportComponent,
+    ForgotidComponent,
+    UserPostComponent
+    
+
   ],
   imports: [
     BrowserModule,

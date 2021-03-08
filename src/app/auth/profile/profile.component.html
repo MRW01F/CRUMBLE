@@ -1,0 +1,39 @@
+<div class="profile" *ngIf="isLoggedIn">
+    <div class="upper-container">
+        <img src="./assets/images/wallpaper.jpg">
+        <div class="img-container">
+            <img src="./assets/images/u.png">
+        </div>
+    </div>
+    <div class="lower-container">
+            <br>
+            <h4>{{username}}</h4>
+            <br>
+        <div >
+            <button class="btn" (click)="goToUserProfile()" >View Profile</button>
+            <br>
+            <button class="btn" (click)="logout()">Logout</button>
+            <br>
+        </div>
+    </div>
+</div>
+
+<div class="profile" *ngIf="!isLoggedIn">
+    <div class="upper-container">
+        <img src="./assets/images/wallpaper.jpg">
+        <div class="img-container">
+            <img src="./assets/images/user-icon.png">
+        </div>
+    </div>
+    <div class="lower-container">
+            <br>
+            <h4>{{username}}</h4>
+            <br>
+        <div >
+            <button class="btn" (click)="goToUserProfile()" >View Profile</button>
+            <br>
+            <!-- <button class="btn" (click)="logout()">Logout</button> -->
+            <br>
+        </div>
+    </div>
+</div>

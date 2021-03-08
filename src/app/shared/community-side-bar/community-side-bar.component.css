@@ -1,19 +1,27 @@
-.sidebar-view-community {
-    width: 312px;
-    height: 242px;
+.sidebar-view-Community {
+    width: 212px;
+    height:600px;
     --post-line-color: #ccc;
     border: 1px solid #ccc;
-    margin-bottom: 10px;
+    margin:  10px 0px 0px 0px; 
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #878A8C;
-    position: relative;
+    background-color: #02153c;
+    color: white;
+    position: fixed;
     border-radius: 4px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow:0px 1px 10px red;
+    overflow:auto;
   }
-
+  hr{
+    border: 1px solid white;
+  }
   .sidebar-view-community {
     height: 280px;
   }
+.community-lst{
+  padding: 0.1px;
+}
+.com-text a {
+  color: red;
+}

@@ -1,3 +1,6 @@
+<div class="community-side-bar">
+  <app-community-side-bar></app-community-side-bar>
+</div> 
 <div class="container">
   <div class="row">
     <hr />
@@ -25,7 +28,8 @@
               <div class="form-group">
                 <textarea class="form-control" [formControlName]="'text'" placeholder="Your Thoughts?"></textarea>
               </div>
-              <button type="submit" class="login float-right">Comment</button>
+              <button type="submit" class="login float-right"><fa-icon [icon]="faComments"></fa-icon> &nbsp; Comment</button>
+             
             </form>
           </div>
           <div style="margin-top: 60px;" *ngFor="let comment of comments">
@@ -42,10 +46,15 @@
           </div>
         </div>
       </div>
+      <!-- <div class="sidebar">
+        <app-side-bar></app-side-bar>
+        <app-profile></app-profile>
+      </div>  -->
     </div>
-    <div class="col-md-3">
+    <div class="sidebar">
       <app-side-bar></app-side-bar>
-      <app-community-side-bar></app-community-side-bar>
-    </div>
+      <app-profile></app-profile>
+    </div> 
   </div>
 </div>
+ 

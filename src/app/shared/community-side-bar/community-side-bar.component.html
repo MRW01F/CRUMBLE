@@ -1,11 +1,12 @@
-<div class="sidebar-view-subreddit">
-    <div style="color: black; font-weight: bold">Browse Subreddits</div>
-    <hr />
-    <span *ngFor="let community of communities">
-        <span class="subreddit-text"><a href="/view-subreddit/{{community.id}}">{{community.name}}</a></span>
-        <hr />
-    </span>
-    <div style="text-align: center" *ngIf="displayViewAll">
-        <a style="font-weight: bold" routerLink="/list-subreddits">View All</a>
-    </div>
+<div class="sidebar-view-Community"  >
+    <div style="color: white; font-weight: bold">Browse Communities</div>
+   <hr />
+   <span *ngFor="let community of communities">
+        <div class="com-text">
+                <!-- <span class="Community-text" ><a href="/list-community/{{community.id}}">{{community.name}}</a></span> -->
+            <span class="Community-text" ><a href="/list-community/{{community.id}}" routerLink="/create-post">{{community.name}}</a></span>
+            <br>
+        </div>
+    </span>  
 </div>
+
