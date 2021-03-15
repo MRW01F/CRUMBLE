@@ -11,22 +11,22 @@
         </div>
         <div class="col-md-11">
           <span>
-            <span class="community-text"><a class="post-url" href="">{{post.communityName}}</a></span>
+            <span class="community-text"><a class="post-url"  routerLink="/list-community">{{post.communityName}}</a></span>
             <span> . Posted
               <span> {{post.duration}} </span>
               by
-              <a class="username" href="">{{post.userName}}</a>
+              <span class="username" href="">{{post.userName}}</span>
             </span>
           </span>
           <hr />
-          <a routerLink="post.url" class="post-title">{{post.postName}}</a>
+          <span class="post-title">{{post.postName}}</span>
           <div>
             <p class="post-text" [innerHtml]="post.description"></p>
           </div>
           <div class="post-comment">
             <form [formGroup]="commentForm" (ngSubmit)="postComment()">
               <div class="form-group">
-                <textarea class="form-control" [formControlName]="'text'" placeholder="Your Thoughts?"></textarea>
+                <textarea class="form-control" [formControlName]="'text'" placeholder="Your Thoughts?" style=" background-color: #000714; color: white; resize: none; overflow: auto;"></textarea>
               </div>
               <button type="submit" class="login float-right"><fa-icon [icon]="faComments"></fa-icon> &nbsp; Comment</button>
              
@@ -34,22 +34,21 @@
           </div>
           <div style="margin-top: 60px;" *ngFor="let comment of comments">
             <div class="comment">
-              <div class="username">
+              <!-- <div class="username">
                 <a routerLink="/user/comment.username">{{comment.username}}</a>
               </div>
               <div>
                 <p>{{comment.duration}}</p>
-              </div>
+              </div> -->
+                <span class="username" routerLink="/user/comment.username">{{comment.userName}}</span>
+                <a routerLink="/report" class="report">Report</a>
+                <br>
               <b>{{comment.text}}</b>
             </div>
             <hr />
           </div>
         </div>
       </div>
-      <!-- <div class="sidebar">
-        <app-side-bar></app-side-bar>
-        <app-profile></app-profile>
-      </div>  -->
     </div>
     <div class="sidebar">
       <app-side-bar></app-side-bar>

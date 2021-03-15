@@ -1,9 +1,8 @@
 <div class="sidebar-view-Community"  >
     <div style="color: white; font-weight: bold">Browse Communities</div>
    <hr />
-   <span *ngFor="let community of communities">
+   <span *ngFor="let community of communities.slice().reverse()">
         <div class="com-text">
-                <!-- <span class="Community-text" ><a href="/list-community/{{community.id}}">{{community.name}}</a></span> -->
             <span class="Community-text" ><a href="/list-community/{{community.id}}" routerLink="/create-post">{{community.name}}</a></span>
             <br>
         </div>

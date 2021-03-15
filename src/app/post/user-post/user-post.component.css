@@ -61,7 +61,9 @@
     margin-right: 3px;
     
 }
-.report {
+.deletepost{
     float:right;
+}
+.deletepost a{
     color: red;
 }

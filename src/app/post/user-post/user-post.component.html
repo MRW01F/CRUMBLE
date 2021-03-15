@@ -7,11 +7,13 @@
           <span class="community-text"><span class="posturl">{{post.communityName}}</span></span>
           <span> . Posted by <span class="cc" >{{post.userName}}</span></span>
           <span> . {{post.duration}}</span>
-            <a routerLink="/report" class="report">Report</a> 
         </span>
+        <div class="deletepost">
+          <a routerLink="/report">Delete</a> 
+        </div>
        <br>&nbsp;
         <div class="post-title">
-          <a class="postname" href="{{post.url}}">{{post.postName}}</a>
+          <span class="postname">{{post.postName}}</span>
         </div>
         <div>
           <p class="post-text" [innerHtml]="post.description"></p>

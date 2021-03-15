@@ -74,7 +74,10 @@ img{
     margin-top: 5px;
     
   }
-
+.create-community-heading{
+  font-weight: 700;
+  font-size: 20px;
+}
   .guidelines {
     text-align: center;
     font-size: 16px;
@@ -84,7 +87,7 @@ img{
   }
   .sidebar {
     width: 312px;
-    height: 342px;
+    height: 430px;
     --post-line-color: #ccc;
     border: 1px solid #ccc;
     margin-bottom: 10px;
@@ -96,11 +99,18 @@ img{
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+  
   }
   .description{
     height: 942px;
+    font-size: 14px;
   }
   .description img{
-    height: 60px;
-    width: 530px;
+    height: 70px;
+    width: 285px;
   }
+  textarea{
+    height: 270px;
+    resize: none;
+  }
+  

@@ -24,7 +24,8 @@
 }
 
 .username{
-    color: #71b6ff;
+    /* color: #60e2f3; */
+    color: red;
 }
 
 .post-text{
@@ -50,11 +51,16 @@
     border: 1px solid #ccc;
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: rgba(255,255,255,0.8);
-    color: #2f2f30;
     position: relative;
     border-radius: 4px;
     padding:5px;
+    background-color: #000714;
+    color: white;
+ 
+}
+.comment a{
+  float: right;
+  color: red;
 }
 .community-side-bar{
   margin-top: -20px;

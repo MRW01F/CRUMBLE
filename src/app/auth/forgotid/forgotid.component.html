@@ -1,1 +1,30 @@
-<p>forgotid works!</p>
+
+<div class="forgotid-section">
+    <div class="row justify-content-center">
+        <div class="col-md-3"></div>
+        <div class="col-md-6"  style="position: fixed;">
+            <div class="card">
+                <div class="card-header" style="text-align: center"><h4>Forgot ID</h4></div>
+                <div class="card-body">
+                     <form [formGroup]="forgot">
+                        <div class="content" class="col-form-label text-md-center">
+                          Enter Your Email ID To Get Your Reset Link.
+                          <br><br>
+                          <input type="text" id="mail"><BR>
+                          </div>                  
+                        <hr />
+                         <span class="col-md-6 offset-md-4" style="align-items: center;">
+                          <button type="submit" class="forgotid " (click)="xyz()">
+                                OK
+                            </button>
+                            <button routerLink="../" class="forgotid">
+                                Cancel
+                            </button>
+                        </span>  
+                    </form> 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>

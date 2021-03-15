@@ -1,68 +1,35 @@
-
 <div class="login-section">
     <div class="row justify-content-center">
         <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-6"  style="position: fixed;">
             <div class="card">
                 <div class="card-header" style="text-align: center"><h4>Report</h4></div>
                 <div class="card-body">
                      <form [formGroup]="loginForm" (ngSubmit)="reported()">
                         <div class="content">
                             Why you want to report?<br><br>
-                            <input type="checkbox" name="report1">Nudity/Explicit Content<br>
-                            <input type="checkbox" name="report2">Harrasement/Abuse<br>
-                            <input type="checkbox" name="report3">Violation of rules<br>
-                            <input type="checkbox" name="report4">Reveling/Sharing personal Information<br><br>
+                            <input type="checkbox"  name="report5">&nbsp;Delete This Post<br><br>
+                            <input type="checkbox"  name="report1">&nbsp;Nudity/Explicit Content<br>
+                            <input type="checkbox" name="report2">&nbsp;Harrasement/Abuse<br>
+                            <input type="checkbox" name="report3">&nbsp;Violation of rules<br>
+                            <input type="checkbox" name="report4">&nbsp;Reveling/Sharing personal Information<br><br>
                             Describe more:<br>
                             <textarea></textarea> 
-                        </div>
-                        
+                        </div>                      
                         <hr />
-                        <div class="popup" id="popup-1">
-                            <div class="overlay"></div>
-                                <div class="content">
-                                    <div class="close-btn" (click)="cls()">&times;</div>
-                                    <h1>Reported</h1>
-                                    <p>Your report has been submitted. Moderators will check into your report. <br>Thankyou for submitting your report </p>
-                                </div>
-                        </div>
-                       
                         <span class="col-md-6 offset-md-4">
                           <button type="submit" class="login" (click)="xyz()">
                                 Report
-                            </button> 
-                               
+                            </button>   
                             &nbsp;&nbsp;
                             <button type="submit" class="login" routerLink="../">
                                 Cancel
                             </button>
                         </span>  
-
                     </form> 
-              
                 </div>
             </div>
         </div>
         <div class="col-md-3"></div>
     </div>
 </div>
-<!-- <html>
-<head>
-   <script>
-        function popup(){
-            document.getElementById("popup-1").classList.toggle("active");
-        }
-    </script> 
-</head>
-<body>
-    <div class="popup" id="popup-1">
-        <div class="overlay"></div>
-			<div class="content">
-				<div class="close-btn" (click)="xyz()">&times;</div>
-				<h1>Reported</h1>
-				<p>Your report has been submitted. Moderators will check into your report. <br>Thankyou for submitting your report </p>
-			</div>
-    </div>
-    <button (click)="xyz()">Report</button>
-</body>
-</html> -->

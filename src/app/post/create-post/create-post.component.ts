@@ -6,6 +6,7 @@ import { PostService } from 'src/app/shared/post.service';
 import { CommunityService } from 'src/app/community/community.service';
 import { throwError } from 'rxjs';
 import { CreatePostPayload } from './create-post.payload';
+import { faBold, faItalic, faUnderline, faStrikethrough, faAlignCenter, faAlignJustify, faAlignLeft, faIndent, faListOl, faListUl } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-create-post',
@@ -17,6 +18,17 @@ export class CreatePostComponent implements OnInit {
   createPostForm: FormGroup;
   postPayload: CreatePostPayload;
   communities: Array<CommunityModel>;
+  faBold = faBold;
+  faItalic = faItalic;
+  faUnderline = faUnderline;
+  faStrikethrough =faStrikethrough;
+  faAlignCenter =faAlignCenter;
+  faAlignJustify =faAlignJustify;
+  faAlignLeft =faAlignLeft;
+  faIndent =faIndent;
+  faListOl =faListOl;
+  faListUl =faListUl;
+  
 
   constructor(private router: Router, private postService: PostService,
     private communityService: CommunityService) {
@@ -40,7 +52,8 @@ export class CreatePostComponent implements OnInit {
     }, error => {
       throwError(error);
     });
-  }
+
+    }
 
   createPost() {
     this.postPayload.postName = this.createPostForm.get('postName').value;
@@ -58,5 +71,7 @@ export class CreatePostComponent implements OnInit {
   discardPost() {
     this.router.navigateByUrl('/');
   }
+
+ 
 
 }

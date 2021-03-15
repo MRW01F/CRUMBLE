@@ -74,11 +74,3 @@ header{
 .userdetails span{
     color: white;
 }
-
-.account-icon{
-    border-radius: 4px;
-    float: left;
-    margin-right: 5px;
-    max-height: 24px;
-    max-width: 24px;
-}

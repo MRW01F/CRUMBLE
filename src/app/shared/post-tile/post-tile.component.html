@@ -7,19 +7,31 @@
         <span class="community-text"><a class="posturl" routerLink="/list-community">{{post.communityName}}</a></span>
         <span> . Posted by <span class="cc" >{{post.userName}}</span></span>
         <span> . {{post.duration}}</span>
-          <a routerLink="/report" class="report">Report</a> 
       </span>
+      <div class="reportpost" *ngIf="isLoggedIn">
+        <a routerLink="/report">Report</a> &nbsp; 
+      </div>
+      <!-- User not logged in to report and delete -->
+      <div class="reportpost" *ngIf="!isLoggedIn"></div>
+
      <br>&nbsp;
       <div class="post-title">
-        <a class="postname" href="{{post.url}}">{{post.postName}}</a>
+        <span class="postname" >{{post.postName}}</span>
       </div>
       <div>
         <p class="post-text" [innerHtml]="post.description"></p>
       </div>
       <hr />
       <span>
-        <button class="login">
+        <button class="login"  *ngIf="isLoggedIn">
           <a class="btnCommments" role="button" (click)="goToPost(post.id)" >
+            <fa-icon [icon]="faComments"></fa-icon>
+            Comments({{post.commentCount}})
+          </a>
+        </button>
+        <!-- User not logged in to comment -->
+        <button class="login"  *ngIf="!isLoggedIn">
+          <a class="btnCommments" role="button" routerLink="/login" >
             <fa-icon [icon]="faComments"></fa-icon>
             Comments({{post.commentCount}})
           </a>
